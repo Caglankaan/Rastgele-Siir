@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>1A8D7BFA-55CA-4C64-AA75-0FDCFEA7E3FC</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1A8D7BFA-55CA-4C64-AA75-0FDCFEA7E3FC.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>RastgeleSiirIos project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RastgeleSiirIos</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project RastgeleSiirIos with scheme RastgeleSiirIos and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>578446521.68262994</real>
+			<key>timeStoppedRecording</key>
+			<real>578446541.85883296</real>
+			<key>title</key>
+			<string>Building project RastgeleSiirIos with scheme RastgeleSiirIos and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>1A8D7BFA-55CA-4C64-AA75-0FDCFEA7E3FC</string>
+		</dict>
+		<key>DA317FEF-4C89-48D9-9014-DA2FDA9F2E94</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DA317FEF-4C89-48D9-9014-DA2FDA9F2E94.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>RastgeleSiirIos project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RastgeleSiirIos</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project RastgeleSiirIos with scheme RastgeleSiirIos and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>578455920.67536294</real>
+			<key>timeStoppedRecording</key>
+			<real>578455925.26347995</real>
+			<key>title</key>
+			<string>Building project RastgeleSiirIos with scheme RastgeleSiirIos and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>DA317FEF-4C89-48D9-9014-DA2FDA9F2E94</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

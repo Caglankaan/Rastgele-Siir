@@ -1,0 +1,24 @@
+dependencies: \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Demangle.cpp \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Demangle.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/FBString.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/CppAttributes.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Portability.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/portability/Config.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/CPortability.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Traits.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/hash/Hash.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Utility.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/functional/ApplyTuple.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/functional/Invoke.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Preprocessor.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/hash/SpookyHashV1.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/hash/SpookyHashV2.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/Bits.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/ConstexprMath.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/Assume.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/portability/Builtins.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/Exception.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/memory/Malloc.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/memory/detail/MallocImpl.h \
+  /Users/kaancaglan/development/RastgeleSiirIos/node_modules/react-native/third-party/folly-2018.10.22.00/folly/detail/Demangle.h
