@@ -5,6 +5,8 @@ import {withNavigation} from 'react-navigation'
 import SearchInput from 'react-native-search-filter';
 import {AdMobBanner} from 'react-native-admob';
 import config from "../../../config/index.js";
+import {Header} from 'react-native-elements';
+import Icon from 'react-native-vector-icons/AntDesign';
 
 var json = require("../../../poems.json")
 
@@ -18,14 +20,7 @@ var poetNames = {"ah-muhsin-unlu":"Ah Muhsin Ünlü","ahmet-hamdi-tanpinar":"Ahm
 
 class Poems extends Component {  
     static navigationOptions = {
-        title: 'Şiirler',
-        headerStyle: {
-          backgroundColor: 'rgb(242,235,229)',
-        },
-        headerTintColor: 'black',
-        headerTitleStyle: {
-          fontWeight: 'bold',
-        },
+        header:null
       };
     
     constructor(){
@@ -47,6 +42,15 @@ class Poems extends Component {
         return Object.keys(object).find(key => object[key] === value);
       }
   render() {
+    navigation = this.props.navigation
+
+    prevPage = <TouchableOpacity onPress={() => navigation.push('Poets')}>
+    <Icon
+    name = "back"
+    size={30}
+    color = "black"
+    background="white"/>
+  </TouchableOpacity>;
     myloop=[]
     navigation = this.props.navigation
     currenttPoet = navigation.getParam('poet',"default poet");
@@ -93,6 +97,16 @@ class Poems extends Component {
     }
     return (
         <View style = {{flex: 1, width: 100+"%",backgroundColor:"rgb(242,235,229)"}}>
+        <View style={{width:100+"%"}}>
+                <Header
+                    barStyle="light-content" // or directly
+                    containerStyle={{
+                    backgroundColor: 'rgb(242,235,229)',
+                    }}
+                    leftComponent={prevPage}
+                    centerComponent={{ text: 'Şiirler', style: { color: 'black' } }}
+                    />
+            </View>
         <SearchInput 
                     onChangeText={(term) => { this.searchUpdated(term) }} 
                     style={styles.searchInput}

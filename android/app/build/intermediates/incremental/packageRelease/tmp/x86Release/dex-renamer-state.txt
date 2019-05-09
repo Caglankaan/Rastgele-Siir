@@ -1,0 +1,4 @@
+#Fri May 10 00:14:59 EET 2019
+base.0=/Users/kaancaglan/development/react-native/RastgeleSiirIos/android/app/build/intermediates/transforms/dexMerger/release/0
+renamed.0=classes.dex
+path.0=classes.dex

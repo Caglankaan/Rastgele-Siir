@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kaancaglan/development/RastgeleSiirIos/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml",
+            "outputFile": "/Users/kaancaglan/development/react-native/RastgeleSiirIos/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "/Users/kaancaglan/.gradle/caches/transforms-1/files-1.1/play-services-ads-15.0.0.aar/e1c0db1be6e696406657dee9f8cbb778/res/values-ko/values.xml",

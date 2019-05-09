@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kaancaglan/development/RastgeleSiirIos/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/Users/kaancaglan/development/react-native/RastgeleSiirIos/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/Users/kaancaglan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/74e1985e290309202b3f2937fed4d575/res/values-v24/values-v24.xml",

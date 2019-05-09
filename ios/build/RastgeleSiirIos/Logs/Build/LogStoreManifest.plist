@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>1A8D7BFA-55CA-4C64-AA75-0FDCFEA7E3FC</key>
+		<key>4843D6DF-8E6A-4E2E-A8C9-8435583848D0</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>1A8D7BFA-55CA-4C64-AA75-0FDCFEA7E3FC.xcactivitylog</string>
+			<string>4843D6DF-8E6A-4E2E-A8C9-8435583848D0.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -30,15 +30,15 @@
 			<key>signature</key>
 			<string>Building project RastgeleSiirIos with scheme RastgeleSiirIos and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>578446521.68262994</real>
+			<real>578501838.93047094</real>
 			<key>timeStoppedRecording</key>
-			<real>578446541.85883296</real>
+			<real>578501843.095667</real>
 			<key>title</key>
 			<string>Building project RastgeleSiirIos with scheme RastgeleSiirIos and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>1A8D7BFA-55CA-4C64-AA75-0FDCFEA7E3FC</string>
+			<string>4843D6DF-8E6A-4E2E-A8C9-8435583848D0</string>
 		</dict>
-		<key>DA317FEF-4C89-48D9-9014-DA2FDA9F2E94</key>
+		<key>4CF090D6-ACF7-4D53-9F2B-3308631D8AF8</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -47,7 +47,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>DA317FEF-4C89-48D9-9014-DA2FDA9F2E94.xcactivitylog</string>
+			<string>4CF090D6-ACF7-4D53-9F2B-3308631D8AF8.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -62,13 +62,13 @@
 			<key>signature</key>
 			<string>Building project RastgeleSiirIos with scheme RastgeleSiirIos and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>578455920.67536294</real>
+			<real>578501202.72816896</real>
 			<key>timeStoppedRecording</key>
-			<real>578455925.26347995</real>
+			<real>578501204.66969299</real>
 			<key>title</key>
 			<string>Building project RastgeleSiirIos with scheme RastgeleSiirIos and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>DA317FEF-4C89-48D9-9014-DA2FDA9F2E94</string>
+			<string>4CF090D6-ACF7-4D53-9F2B-3308631D8AF8</string>
 		</dict>
 	</dict>
 </dict>

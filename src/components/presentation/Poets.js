@@ -5,6 +5,8 @@ import { ScrollView } from "react-native-gesture-handler";
 import SearchInput from 'react-native-search-filter';
 import {AdMobBanner, PublisherBanner} from 'react-native-admob';
 var json = require("../../../poems.json")
+import {Header} from 'react-native-elements';
+import Icon from 'react-native-vector-icons/AntDesign';
 
 var poetNames = {"ah-muhsin-unlu":"Ah Muhsin Ünlü","ahmet-hamdi-tanpinar":"Ahmet Hamdi Tanpınar","ali-lidar":"Ali Lidar","arif-damar":"Arif Damar","asik-veysel-satiroglu":"Aşık Veysel Satıroğlu",
 "attila-ilhan":"Attila İlhan","cahit-koytak":"Cahit Koytak","cahit-sitki-taranci":"Cahit Sıtkı Tarancı","can-dundar":"Can Dündar","can-yucel":"Can Yücel","celal-silay":"Celal Silay","cemal-sureya":"Cemal Süreya",
@@ -27,14 +29,7 @@ for(let i = 0;i<allPoetss.length;i++){
 export default class Poets extends Component{
 
     static navigationOptions = {
-        title: 'Şairler',
-        headerStyle: {
-          backgroundColor: 'rgb(244,197,168)',
-        },
-        headerTintColor: 'black',
-        headerTitleStyle: {
-          fontWeight: 'bold',
-        },
+        header:null
       };
     
     constructor(){
@@ -55,6 +50,15 @@ export default class Poets extends Component{
         this.setState({ search: term })
       }
     render(){
+        navigation = this.props.navigation
+
+        prevPage = <TouchableOpacity onPress={() => navigation.push('Home')}>
+    <Icon
+    name = "back"
+    size={30}
+    color = "black"
+    background="white"/>
+  </TouchableOpacity>;
         
         //const {search} = this.state.search;
         myloop=[]
@@ -64,8 +68,7 @@ export default class Poets extends Component{
                 <View key={i}>
                 <TouchableOpacity
                     activeOpacity={.7}
-                    onPress={() => this.props.navigation.navigate('Poems',{poet: allPoets[i]})}
-                    >
+                    onPress={() => this.props.navigation.navigate('Poems',{poet: allPoets[i]})}                    >
                     <Text style= {styles.poets}>{allPoets[i]}</Text>
                     </TouchableOpacity>
                 </View>
@@ -91,6 +94,16 @@ export default class Poets extends Component{
         return (
 
             <View style = {{flex: 1, width: 100+"%",backgroundColor:"rgb(244,197,168)"}}>
+            <View style={{width:100+"%"}}>
+                <Header
+                    barStyle="light-content" // or directly
+                    containerStyle={{
+                    backgroundColor: 'rgb(244,197,168)',
+                    }}
+                    leftComponent={prevPage}
+                    centerComponent={{ text: 'Şairler', style: { color: 'black' } }}
+                    />
+            </View>
                     <SearchInput 
                                     onChangeText={(term) => { this.searchUpdated(term) }} 
                                     placeholder="Şair Ara"
@@ -153,7 +166,8 @@ icon:{
 poets:{
     borderBottomWidth: 0.5,
     borderColor: 'rgba(0,0,0,0.3)',
-    padding: 10
+    padding: 10,
+    fontStyle:"italic"
 },  
 searchInput:{
     padding: 10,

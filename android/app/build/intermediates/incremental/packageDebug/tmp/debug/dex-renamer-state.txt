@@ -1,4 +1,4 @@
-#Thu May 02 02:51:47 EET 2019
-base.0=/Users/kaancaglan/development/RastgeleSiirIos/android/app/build/intermediates/transforms/dexMerger/debug/0
+#Thu May 09 21:33:29 EET 2019
+base.0=/Users/kaancaglan/development/react-native/RastgeleSiirIos/android/app/build/intermediates/transforms/dexMerger/debug/0
 renamed.0=classes.dex
 path.0=classes.dex

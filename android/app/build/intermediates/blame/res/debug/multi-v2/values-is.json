@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kaancaglan/development/RastgeleSiirIos/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-is/values-is.xml",
+            "outputFile": "/Users/kaancaglan/development/react-native/RastgeleSiirIos/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-is/values-is.xml",
             "map": [
                 {
                     "source": "/Users/kaancaglan/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/4ec25bb7356fc2346b597303cc599f1b/res/values-is/values.xml",

@@ -14,6 +14,7 @@ import choosePoets from './src/components/screens/choosePoets';
 import Poem from './src/components/presentation/Poem.js';
 import Poems from './src/components/presentation/Poems.js';
 import randomPoem from './src/components/presentation/randomPoem.js';
+import Favorites from './src/components/presentation/Favorites.js'
 //import WholePoems from './src/components/presentation/WholePoems.js'
 import randomPoemWithPoet from './src/components/presentation/randomPoemWithPoet'
 import Icon from 'react-native-vector-icons/MaterialIcons'
@@ -27,6 +28,7 @@ const AppNavigator = createStackNavigator(
       choosePoets,
       randomPoemWithPoet,
       Poets,
+      Favorites,
       Poems,
       Poem,
       //WholePoems,

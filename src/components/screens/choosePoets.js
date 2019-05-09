@@ -5,13 +5,34 @@ import { ScrollView } from "react-native-gesture-handler";
 var json = require("../../../poems.json")
 import { CheckBox } from 'react-native-elements'
 
+var poetNames = {"ah-muhsin-unlu":"Ah Muhsin Ünlü","ahmet-hamdi-tanpinar":"Ahmet Hamdi Tanpınar","ali-lidar":"Ali Lidar","arif-damar":"Arif Damar","asik-veysel-satiroglu":"Aşık Veysel Satıroğlu",
+"attila-ilhan":"Attila İlhan","cahit-koytak":"Cahit Koytak","cahit-sitki-taranci":"Cahit Sıtkı Tarancı","can-dundar":"Can Dündar","can-yucel":"Can Yücel","celal-silay":"Celal Silay","cemal-sureya":"Cemal Süreya",
+"didem-madak":"Didem Madak","ece-ayhan":"Ece Ayhan","edip-cansever":"Edip Cansever","friedrich-nietzsche":"Friedrich Nietzsche","hasan-huseyin-korkmazgil":"Hasan Hüseyin Korkmazgil",
+"ilhan-berk":"İlhan Berk","mehmet-emin-yurdakul":"Mehmet Emin Yurdakul","muzaffer-tayyip-uslu":"Muzaffer Tayyip Uslu","nahit-ulvi-akgun":"Nahit Ulvi Akgün","nazim-hikmet":"Nazım Hikmet",
+"necip-fazil-kisakurek":"Necip Fazıl Kısakürek","neset-ertas":"Neşet Ertaş","neyzen-tevfik":"Neyzen Tevfik","omer-hayyam":"Ömer Hayyam","orhan-veli-kanik":"Orhan Veli Kanık","ozdemir-asaf":"Özdemir Asaf",
+"peyami-safa":"Peyami Safa","sunay-akin":"Sunay Akın","tevfik-fikret":"Tevfik Fikret","turgut-uyar":"Turgut Uyar","veysel-colak":"Veysel Çolak","william-shakespeare":"William Shakespeare",
+"yilmaz-erdogan":"Yılmaz Erdoğan","yilmaz-guney":"Yılmaz Güney","yunus-emre":"Yunus Emre","ziya-gokalp":"Ziya Gökalp"}
+
+var allPoetss = []
 var allPoets = []
 for(var key in json){
-    allPoets.push(key)
+    allPoetss.push(key)
+}
+for(let i = 0;i < allPoetss.length;i++){
+    allPoets.push(poetNames[allPoetss[i]])
 }
 
-
 export default class choosePoets extends Component{
+    static navigationOptions = {
+        title: 'Şair Seç',
+        headerStyle: {
+          backgroundColor: 'rgb(202,215,206)',
+        },
+        headerTintColor: 'black',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      };
     
     constructor(){
         super();
@@ -25,22 +46,6 @@ export default class choosePoets extends Component{
         this.setState({checked: checkedClone})
     }
 
-    myFunc(){
-        myArr=[]
-        for(let i = 0; i < allPoets.length; i++){
-            checkedPoets.push(false)
-            myArr.push(
-                <CheckBox
-                center
-                title={allPoets[i]}
-                checkedIcon='dot-circle-o'
-                uncheckedIcon='circle-o'
-                onPress={(key)=> alert("title is : "+key)}
-                checked={this.state.checkedClone[i]}
-            />
-            );
-        }
-    }
     render(){
         myArr=[]
         checkedPoets=[]
@@ -48,6 +53,7 @@ export default class choosePoets extends Component{
             checkedPoets.push(false)
             myArr.push(
                 <CheckBox
+                key = {i+1}
                 width = {100+"%"}
                 containerStyle={{/*width:50+"%",*/backgroundColor : "rgb(202,215,206)"}}
                 title={allPoets[i]}

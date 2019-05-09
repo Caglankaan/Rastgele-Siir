@@ -3,6 +3,12 @@ import {View, Text , TouchableOpacity, StyleSheet, Image} from 'react-native';
 var json = require("../../../poems.json")
 import {withNavigation} from 'react-navigation'
 import config from '../../../config/index.js';
+import {AdMobBanner,
+    AdMobInterstitial
+} from 'react-native-admob';
+var RNFS = require('react-native-fs');
+
+global.fileContent= ""
 
 var wholePoets = []
 for(var key in json){
@@ -10,9 +16,9 @@ for(var key in json){
 }
 class Home extends Component {
     static navigationOptions = {
-        title: 'Home',
+        title: 'Ana Sayfa',
         headerStyle: {
-          backgroundColor: "rgb(250,250,250)",
+          backgroundColor: "rgb(202,215,206)",
         },
         headerTintColor: '#fff',
         headerTitleStyle: {
@@ -95,7 +101,27 @@ class Home extends Component {
             
           
   }
+  async readFile() {
+    filename= "favorites.txt"
+    var rootPath = RNFS.DocumentDirectoryPath
+    var path = rootPath + '/' + filename;
+    if(await RNFS.exists(path)){
+        var content = await RNFS.readFile(path, 'utf8')
+        myFavorites = content.split("\n")
+        if(content == ""){
+        global.fileContent =  poet+"|"+poem
+        }
+        else{
+        global.fileContent = content
+        console.log("content is : ",content)
+        }
+    }
+    else{
+        this.clearFile()
+    }
+  }
   render() {
+      this.readFile()
     return (
       <View  style={{backgroundColor:"rgb(202,215,206)",alignItems:"center", flex:1,width:100+"%"}}>    
       <View style={{width:100+"%",height:300,alignItems:"center"}}>
@@ -124,6 +150,14 @@ class Home extends Component {
                 }}
                 >
                     <Text style={styles.textStyle}>Belirli şair(ler)den rastgele şiir ver</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.TouchableOpacityStyle}
+                activeOpacity= {0.8}
+                onPress = {() => {
+                    this.props.navigation.navigate('Favorites');
+                }}
+                >
+                    <Text style={styles.textStyle}>Favori Şiirler</Text>
                 </TouchableOpacity>
         </View>
 
